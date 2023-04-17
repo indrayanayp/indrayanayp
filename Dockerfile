@@ -2,4 +2,4 @@ FROM image-registry.openshift-image-registry.svc:5000/microservice-jdl-dev/openj
 EXPOSE 8080
 USER root
 RUN microdnf repolist
-RUN microdnf -y install krb5-workstation krb5-libs --disablerepo=rhel-8-for-x86_64-baseos-rpms
+RUN microdnf -y install krb5-workstation krb5-libs --disablerepo=rhel-8-for-x86_64-baseos-rpms,rhel-8-for-x86_64-appstream-rpms
